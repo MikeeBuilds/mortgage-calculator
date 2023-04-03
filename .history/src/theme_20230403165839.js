@@ -5,8 +5,6 @@ export const theme = createTheme({
         mode: "dark",
     },
     typography: {
-        h1: {
-            
-        },
+        h
     },
 });

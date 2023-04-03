@@ -9,10 +9,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Container maxWidth="xl" sx={{ marginTop: 4 }}>
+      <Container>
         <SliderSelect />
-        <TenureSelect />
-        <Result />
+        
       </Container>
     </div>
   );

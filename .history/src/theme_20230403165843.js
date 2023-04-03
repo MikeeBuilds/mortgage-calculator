@@ -6,7 +6,5 @@ export const theme = createTheme({
     },
     typography: {
         h1: {
-            
-        },
     },
 });
