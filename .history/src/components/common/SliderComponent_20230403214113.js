@@ -4,7 +4,7 @@ import { Stack, Typography } from '@mui/material'
 
 const SliderComponent = ({ defaultValue, min, max, step, onChange, value, label, unit, amount }) => {
   return (
-  <Stack my={1.4}>
+  <>
     <Stack gap={1}>
       <Typography variant='subtitle2'>{label}</Typography>
       <Typography variant='h5'>{unit} {amount}</Typography>
@@ -21,11 +21,11 @@ const SliderComponent = ({ defaultValue, min, max, step, onChange, value, label,
       value={value}
       />
       <Stack direction='row' justifyContent='space-between'>
-    <Typography variant='caption' color='text.secondary'>{unit} {min}</Typography>
-    <Typography variant='caption' color='text.secondary'>{unit} {max}</Typography>
+    <Typography variant='caption' color='text.secondary'>$1000</Typography>
+    <Typography variant='caption' color='text.secondary'>$10,000</Typography>
       </Stack>
 
-  </Stack>
+  </>
   )
 }
 

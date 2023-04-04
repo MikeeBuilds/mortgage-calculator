@@ -7,7 +7,7 @@ const SliderSelect = () => {
         <SliderComponent 
             label='Home Value'
             min={0} 
-            max={300000} 
+            max={30000} 
             defaultValue={20} 
             step={5 } 
             onChange={(e, value) => console.log(value)}
@@ -17,7 +17,7 @@ const SliderSelect = () => {
           <SliderComponent 
             label='Down Payment'
             min={0} 
-            max={3000} 
+            max={30000} 
             defaultValue={20} 
             step={5 } 
             onChange={(e, value) => console.log(value)}
