@@ -6,12 +6,12 @@ import SliderSelect from "./components/SliderSelect";
 import TenureSelect from "./components/TenureSelect";
 
 
-function App() {
+function App({data, setData}) {
 
 
   const [data, setData] = useState(
     {
-      homeValue: 300000,
+      homeValue: 3000,
       downPayment: 50000,
       loanAmount: 1000,
       loanTerm: 3000,

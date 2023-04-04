@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { Container, Grid } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Result from "./components/Result";
@@ -7,16 +7,6 @@ import TenureSelect from "./components/TenureSelect";
 
 
 function App() {
-
-
-  const [data, setData] = useState(
-    {
-      homeValue: 300000,
-      downPayment: 50000,
-      loanAmount: 1000,
-      loanTerm: 3000,
-    });
-
   return (
     <div className="App">
       <Navbar />
@@ -24,7 +14,7 @@ function App() {
         <Grid container spacing={5}> 
           
           <Grid item xs={12} md={6}>
-            <SliderSelect data={data} setData={setData} />
+            <SliderSelect />
             <TenureSelect />
           </Grid>
           <Grid item xs={12} md={6}>

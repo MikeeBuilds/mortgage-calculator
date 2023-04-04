@@ -20,7 +20,7 @@ const SliderSelect = ({data, setData}) => {
           <SliderComponent 
             label='Down Payment'
             min={0} 
-            max={data.homeValue} 
+            max={data.} 
             defaultValue={data.downPayment} 
             value={data.downPayment}
             step={100} 

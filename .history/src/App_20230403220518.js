@@ -8,14 +8,10 @@ import TenureSelect from "./components/TenureSelect";
 
 function App() {
 
-
-  const [data, setData] = useState(
-    {
-      homeValue: 300000,
-      downPayment: 50000,
-      loanAmount: 1000,
-      loanTerm: 3000,
-    });
+  const [homeValue, setHomeValue] = useState(0);
+  const [downPayment, setDownPayment] = useState(0);
+  const [loanAmount, setLoanAmount] = useState(0);
+  const [tenure, setTenure] = useState(0);
 
   return (
     <div className="App">
@@ -24,7 +20,7 @@ function App() {
         <Grid container spacing={5}> 
           
           <Grid item xs={12} md={6}>
-            <SliderSelect data={data} setData={setData} />
+            <SliderSelect />
             <TenureSelect />
           </Grid>
           <Grid item xs={12} md={6}>

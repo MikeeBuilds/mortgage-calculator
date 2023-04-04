@@ -20,11 +20,10 @@ const SliderSelect = ({data, setData}) => {
           <SliderComponent 
             label='Down Payment'
             min={0} 
-            max={data.homeValue} 
-            defaultValue={data.downPayment} 
-            value={data.downPayment}
-            step={100} 
-            onChange={(e, value) => setData({downPayment: value})}
+            max={3000} 
+            defaultValue={20} 
+            step={5 } 
+            onChange={(e, value) => console.log(value)}
             unit={'$'}
             amount={50000}
         />
@@ -39,7 +38,7 @@ const SliderSelect = ({data, setData}) => {
             amount={1000}
         />
          <SliderComponent 
-            label='Interest Rate'
+            label='Loan Amount'
             min={0} 
             max={30000} 
             defaultValue={20} 

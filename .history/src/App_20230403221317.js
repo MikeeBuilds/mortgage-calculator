@@ -8,23 +8,20 @@ import TenureSelect from "./components/TenureSelect";
 
 function App() {
 
+  const [counter, setCounter] = useState(0);
 
-  const [data, setData] = useState(
-    {
-      homeValue: 300000,
-      downPayment: 50000,
-      loanAmount: 1000,
-      loanTerm: 3000,
-    });
 
   return (
     <div className="App">
       <Navbar />
+      <button onClick={()=> setCounter(4)}>decrement</button>
+      <button onClick={()=> setCounter(8)}>increment</button>
+      <p>{counter}</p>
       <Container maxWidth="xl" sx={{ marginTop: 4 }}>
         <Grid container spacing={5}> 
           
           <Grid item xs={12} md={6}>
-            <SliderSelect data={data} setData={setData} />
+            <SliderSelect />
             <TenureSelect />
           </Grid>
           <Grid item xs={12} md={6}>
