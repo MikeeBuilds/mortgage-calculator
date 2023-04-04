@@ -5,9 +5,7 @@ import { Typography } from '@mui/material'
 const SliderComponent = ({ defaultValue, min, max, step, onChange, value }) => {
   return (
   <>
-    <Typography variant='subtitle2'>Home Value</Typography>
-    <Typography variant='h5'>$300,000</Typography>
-
+    <Typography>Home Value</Typography>
     <Slider 
       defaultValue={defaultValue} 
       min={min} max={max} 
