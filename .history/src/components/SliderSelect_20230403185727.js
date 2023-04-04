@@ -7,10 +7,7 @@ const SliderSelect = () => {
         <SliderComponent 
             min={0} 
             max={50} 
-            defaultValue={20} 
-            step={5 } 
-            onChange={(e, value) => console.log(value)}
-        />
+            defaultValue={20} step={10 } />
        
     </>
         

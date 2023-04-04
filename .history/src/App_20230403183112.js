@@ -10,17 +10,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Container maxWidth="xl" sx={{ marginTop: 4 }}>
-        <Grid container spacing={5}> 
+        <Grid container> 
           
-          <Grid item xs={12} md={6}>
-            <SliderSelect />
-            <TenureSelect />
+          <Grid item>
+        <SliderSelect />
+        <TenureSelect />
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Result /> 
+          <Grid item>
 
           </Grid>
 
+        <Result />
         </Grid>
       </Container>
     </div>

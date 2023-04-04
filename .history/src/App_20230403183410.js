@@ -16,7 +16,7 @@ function App() {
             <SliderSelect />
             <TenureSelect />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item md={6}>
             <Result /> 
 
           </Grid>

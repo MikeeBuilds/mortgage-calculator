@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from '@mui/material/Slider'
 
-const SliderComponent = ({ defaultValue, min, max, step, onChange, value }) => {
+const SliderComponent = ({ defaultValue, min, max, step, onChange }) => {
   return (
     <Slider 
       defaultValue={defaultValue} 
